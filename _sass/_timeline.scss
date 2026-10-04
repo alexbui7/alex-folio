@@ -232,6 +232,16 @@ $timeline-axis-mobile: 2.5rem;
     display: none;
   }
 
+  // two photos per row on phones so the page doesn't get too long
+  .timeline-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+
+    .caption {
+      font-size: 0.75rem;
+    }
+  }
+
   .timeline-row {
     grid-template-columns: $timeline-axis-mobile minmax(0, 1fr);
   }

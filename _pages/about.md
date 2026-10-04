@@ -14,7 +14,7 @@ social: true # includes social icons at the bottom of the page
 
 timeline:
   enabled: true # shows the work timeline from _data/timeline.yml
-  compact: true # summary-only on the home page; the full version with photos lives at /work/
+  compact: false # true = summary only; false = full entries with highlights and photos
   title: my journey
 
 announcements:
@@ -42,4 +42,4 @@ What I enjoy most is the part between people and systems — turning ambiguous r
 - **Security & identity** — Entra ID, AWS IAM, SSO/SCIM, RBAC
 - **Cost & operations** — FinOps, tagging and cost allocation, observability
 
-Below is a short timeline of where I've been. For the full story — including photos of the teams I've worked with — see [my work]({{ '/work/' | relative_url }}).
+Below is where I've been, with photos of the teams I've worked with along the way.

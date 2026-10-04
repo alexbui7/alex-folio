@@ -42,9 +42,7 @@ layout: default
 
     <!-- Work timeline -->
     {% if page.timeline and page.timeline.enabled %}
-      <h2>
-        <a href="{{ '/work/' | relative_url }}" style="color: inherit">{{ page.timeline.title | default: 'my journey' }}</a>
-      </h2>
+      <h2>{{ page.timeline.title | default: 'my journey' }}</h2>
       {% include timeline.liquid compact=page.timeline.compact %}
     {% endif %}
 
