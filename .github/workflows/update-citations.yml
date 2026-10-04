@@ -1,10 +1,8 @@
 name: Update Google Scholar Citations
 
+# Scheduled runs are off: this site doesn't use Google Scholar.
+# To turn them back on, restore a `schedule:` block here and set scholar_userid in _data/socials.yml.
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
 jobs:
