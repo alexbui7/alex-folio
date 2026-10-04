@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Work timeline -->
+    {% if page.timeline and page.timeline.enabled %}
+      <h2>
+        <a href="{{ '/work/' | relative_url }}" style="color: inherit">{{ page.timeline.title | default: 'my journey' }}</a>
+      </h2>
+      {% include timeline.liquid compact=page.timeline.compact %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

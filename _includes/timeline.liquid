@@ -1,0 +1,85 @@
+{% comment %}
+  Work timeline, driven by _data/timeline.yml.
+  Usage:
+    {% include timeline.liquid %}               full view (highlights, tags, photos)
+    {% include timeline.liquid compact=true %}  summary-only view for the home page
+{% endcomment %}
+
+<ol class="timeline{% if include.compact %} timeline-compact{% endif %}">
+  {% for entry in site.data.timeline %}
+    {% case entry.type %}
+      {% when 'education' %}
+        {% assign icon = 'fa-solid fa-graduation-cap' %}
+      {% when 'milestone' %}
+        {% assign icon = 'fa-solid fa-award' %}
+      {% else %}
+        {% assign icon = 'fa-solid fa-briefcase' %}
+    {% endcase %}
+
+    <li class="timeline-item timeline-{{ entry.type | default: 'work' }}">
+      <span class="timeline-marker" aria-hidden="true"><i class="{{ icon }}"></i></span>
+
+      <div class="timeline-content">
+        <div class="timeline-date">
+          {{ entry.start -}}
+          {%- if entry.end and entry.end != entry.start %} – {{ entry.end }}{% endif %}
+        </div>
+        <h3 class="timeline-title">{{ entry.title }}</h3>
+        <div class="timeline-org">
+          {% if entry.url %}
+            <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.org }}</a>
+          {% else %}
+            {{ entry.org }}
+          {% endif %}
+          {% if entry.location -%}
+            <span class="timeline-location"> · {{ entry.location }}</span>
+          {%- endif %}
+        </div>
+
+        {% if entry.summary %}
+          <p class="timeline-summary">{{ entry.summary }}</p>
+        {% endif %}
+
+        {% unless include.compact %}
+          {% if entry.highlights and entry.highlights.size > 0 %}
+            <ul class="timeline-highlights">
+              {% for h in entry.highlights %}
+                <li>
+                  {% if h.label -%}
+                    <strong>{{ h.label }}:</strong>
+                  {% endif %}
+                  {{ h.text }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+          {% if entry.photos and entry.photos.size > 0 %}
+            <div class="timeline-photos">
+              {% for photo in entry.photos %}
+                <div class="timeline-photo">
+                  {% assign photo_path = photo.file | prepend: 'assets/img/work/' %}
+                  {%
+                    include figure.liquid path=photo_path class="img-fluid rounded z-depth-1" alt=photo.caption zoomable=true
+                    sizes="(min-width: 576px) 45vw, 95vw"
+                  %}
+                  {% if photo.caption %}
+                    <div class="caption">{{ photo.caption }}</div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endunless %}
+
+        {% if entry.tags and entry.tags.size > 0 %}
+          <div class="timeline-tags">
+            {% for tag in entry.tags %}
+              <span class="timeline-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
