@@ -6,7 +6,7 @@ subtitle: Cloud & Infrastructure Automation Engineer · <a href='https://www.vie
 
 profile:
   align: right
-  # image: prof_pic.jpg # TODO: add your own photo to assets/img/ and uncomment this line
+  image: prof_pic_alex.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm **Alex (Bui Minh Anh)** — an infrastructure engineer who builds automation-first cloud platforms for regulated, large-scale environments.
+Hi, I'm **Bui Minh Anh (Alex Bui)** — an infrastructure engineer who builds automation-first cloud platforms for regulated, large-scale environments.
 
 At **Vietcombank**, I design and build the foundations of the bank's enterprise data and ML platform on **AWS and Databricks**: multi-account architecture, secure private networking, identity and access, Infrastructure-as-Code, CI/CD, and the governance and FinOps controls that keep it all accountable.
 

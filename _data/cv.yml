@@ -45,7 +45,7 @@ cv:
           - Refactored legacy monolithic systems into modular architectures using Clean Architecture, improving testability and maintainability.
           - Developed backend features in C#/.NET in close collaboration with product and UI teams.
 
-      - company: Vingroup Advanced Analytics
+      - company: Vingroup Advanced Analytics (Vantix)
         position: Software Engineer Intern
         location: Hanoi, Vietnam
         start_date: 2019
@@ -58,21 +58,22 @@ cv:
       - institution: Queensland University of Technology
         location: Brisbane, Australia
         url: https://www.qut.edu.au
-        area: Computer Science
-        studyType: Bachelor (Distinction)
+        area: Information Technology (Computer Science)
+        studyType: Bachelor
         start_date: 2019
         end_date: 2021
         highlights:
+          - Awarded with Distinction (August 2021)
           - "Dean's List: Excellent Academic Performance"
 
     Certificates:
       - name: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"
-        date: 2026
+        date: 2026-05-08
         issuer: Microsoft
         icon: fa-solid fa-award
 
       - name: "Microsoft Certified: Azure Administrator Associate (AZ-104)"
-        date: 2025
+        date: 2025-08-15
         issuer: Microsoft
         icon: fa-solid fa-award
 
@@ -92,3 +93,12 @@ cv:
       - name: Security & Governance
         icon: fa-solid fa-shield-halved
         keywords: "Entra ID, AWS IAM, SSO/SCIM, FinOps, observability"
+      - name: AI-Assisted Engineering
+        icon: fa-solid fa-wand-magic-sparkles
+        keywords: "Claude Code, Cursor, Codex"
+
+    Languages:
+      - name: Vietnamese
+        summary: Native
+      - name: English
+        summary: "Fluent: IELTS Academic 7.5 overall, CEFR C1 (2019)"

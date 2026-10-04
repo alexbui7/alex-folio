@@ -17,6 +17,8 @@
 #   location:   optional
 #   summary:    one or two sentences shown everywhere
 #   highlights: optional list of { label, text } shown on /work/ only
+#   verify_url: optional link where visitors can verify a certificate
+#   note:       optional short note shown above the photos on /work/
 #   tags:       optional list of technologies / topics shown as chips
 #   photos:     optional list of photos shown on /work/ only.
 #               Put the image files in assets/img/work/ and reference them as:
@@ -51,19 +53,35 @@
     - label: Working across teams
       text: Aligning Data Engineering, Infrastructure, Security, Architecture, and external vendors on requirements, solution architecture, BOMs, and implementation plans.
   tags: [AWS, Databricks, Terraform, Unity Catalog, Entra ID, GitLab CI/CD, FinOps]
-  photos: []
+  photos:
+    - file: vcb-thanks-party-team.jpg
+      caption: Thanks party with the wider team
+    - file: vcb-thanks-party.jpg
+      caption: With the team at the thanks party
+    - file: vcb-year-end-party.jpg
+      caption: Year-end party with colleagues
+    - file: vcb-year-end-toast.jpg
+      caption: A toast at the year-end party
 
 - type: milestone
-  start: "2026"
+  start: May 2026
   title: Azure Solutions Architect Expert (AZ-305)
   org: Microsoft Certified
+  verify_url: https://learn.microsoft.com/api/credentials/share/en-us/BuiMinhAnh-1841/56200BACE3A6C8AE?sharingId=F7F392EF83CD31CB
   summary: Certified on designing identity, governance, data, and infrastructure solutions on Azure.
+  photos:
+    - file: cert-az305.jpg
+      caption: Certificate
 
 - type: milestone
-  start: "2025"
+  start: Aug 2025
   title: Azure Administrator Associate (AZ-104)
   org: Microsoft Certified
+  verify_url: https://learn.microsoft.com/api/credentials/share/en-us/BuiMinhAnh-1841/9529A3B46A5342?sharingId=F7F392EF83CD31CB
   summary: Certified on managing Azure identities, governance, storage, compute, and virtual networking.
+  photos:
+    - file: cert-az104.jpg
+      caption: Certificate
 
 - type: work
   start: "2021"
@@ -79,13 +97,15 @@
     - label: Feature delivery
       text: Built backend features in C#/.NET in close collaboration with product and UI teams.
   tags: [C#, .NET, Clean Architecture]
-  photos: []
+  photos:
+    - file: fathom-office.jpg
+      caption: Day to day at the Fathom office
 
 - type: work
   start: "2019"
   end: "2020"
   title: Software Engineer Intern
-  org: Vingroup Advanced Analytics
+  org: Vingroup Advanced Analytics (Vantix)
   location: Hanoi, Vietnam
   summary: >
     First steps into data platform automation — making pipelines testable and deployments repeatable.
@@ -95,14 +115,46 @@
     - label: Deployment tooling
       text: Built a Python SDK for automated notebook deployment, reducing manual effort and improving reproducibility.
   tags: [Azure Data Factory, Python, CI/CD]
-  photos: []
+  photos:
+    - file: vingroup-office-desk.jpg
+      caption: Heads-down at the Vantix office
+    - file: vingroup-office-team.jpg
+      caption: A laugh with a teammate between deployments
 
 - type: education
   start: "2019"
   end: "2021"
-  title: Bachelor of Computer Science (Distinction)
+  title: Bachelor of Information Technology (Computer Science), with Distinction
   org: Queensland University of Technology
   url: https://www.qut.edu.au
   location: Brisbane, Australia
-  summary: Graduated with Distinction and named on the Dean's List for excellent academic performance.
-  photos: []
+  summary: Graduated with Distinction in August 2021 and named on the Dean's List for excellent academic performance.
+  photos:
+    - file: cert-qut-degree.jpg
+      caption: Degree certificate
+
+- type: work
+  start: "2019"
+  title: Coding Instructor
+  org: Junior Engineers Tech Centre
+  location: Queensland, Australia
+  summary: >
+    Teaching kids to code, and a job I loved. Turning big ideas into small, hands-on steps that young learners could build on.
+  highlights:
+    - label: Weekly coding classes
+      text: Designed and delivered a weekly programming curriculum for groups of 15–20 students, using Scratch to build foundational coding concepts and computational thinking.
+    - label: Arduino workshops
+      text: Created and led hands-on Arduino workshops for 15 students, combining electronics and programming to build working motorised vehicles.
+  tags: [Teaching, Scratch, Arduino]
+  note: No photos of the students here, to protect their privacy. These are the robots we built.
+  photos:
+    - file: jetc-robot-build.jpg
+      caption: One of the Arduino robot cars, mid-build
+    - file: jetc-robot-track.jpg
+      caption: A finished robot following a taped track
+
+- type: milestone
+  start: Feb 2019
+  title: "IELTS Academic: 7.5 overall (CEFR C1)"
+  org: British Council · IDP · Cambridge Assessment English
+  summary: "Listening 8.5 · Reading 7.5 · Writing 6.5 · Speaking 7.0"
