@@ -1,0 +1,68 @@
+{% comment %}
+  One timeline card. Used by timeline.liquid.
+  Params: entry, compact (summary only), icon (shown inline on side cards)
+{% endcomment %}
+{% assign card = include.entry %}
+
+<div class="timeline-content timeline-{{ card.type | default: 'work' }}">
+  <div class="timeline-date">
+    {% if include.icon %}<i class="{{ include.icon }}" aria-hidden="true"></i>{% endif %}
+    {{ card.start -}}
+    {%- if card.end and card.end != card.start %} – {{ card.end }}{% endif %}
+  </div>
+  <h3 class="timeline-title">{{ card.title }}</h3>
+  <div class="timeline-org">
+    {% if card.url %}
+      <a href="{{ card.url }}" target="_blank" rel="noopener noreferrer">{{ card.org }}</a>
+    {% else %}
+      {{ card.org }}
+    {% endif %}
+    {% if card.location -%}
+      <span class="timeline-location"> · {{ card.location }}</span>
+    {%- endif %}
+  </div>
+
+  {% if card.summary %}
+    <p class="timeline-summary">{{ card.summary }}</p>
+  {% endif %}
+
+  {% unless include.compact %}
+    {% if card.highlights and card.highlights.size > 0 %}
+      <ul class="timeline-highlights">
+        {% for h in card.highlights %}
+          <li>
+            {% if h.label -%}
+              <strong>{{ h.label }}:</strong>
+            {% endif %}
+            {{ h.text }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if card.photos and card.photos.size > 0 %}
+      <div class="timeline-photos">
+        {% for photo in card.photos %}
+          <div class="timeline-photo">
+            {% assign photo_path = photo.file | prepend: 'assets/img/work/' %}
+            {%
+              include figure.liquid path=photo_path class="img-fluid rounded z-depth-1" alt=photo.caption zoomable=true
+              sizes="(min-width: 576px) 45vw, 95vw"
+            %}
+            {% if photo.caption %}
+              <div class="caption">{{ photo.caption }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endunless %}
+
+  {% if card.tags and card.tags.size > 0 %}
+    <div class="timeline-tags">
+      {% for tag in card.tags %}
+        <span class="timeline-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

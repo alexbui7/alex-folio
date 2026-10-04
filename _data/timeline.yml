@@ -4,8 +4,12 @@
 # Rendered on the home page (compact) and on /work/ (full, with photos).
 # Entries are shown in the order they appear here, newest first.
 #
+# Layout: jobs (type: work) sit on the right of the line. Education and
+# certifications sit on the left, beside the job listed just above them here,
+# so list each cert/degree under the job you held when you earned it.
+#
 # Fields:
-#   type:       work | education | milestone  (controls the marker icon)
+#   type:       work | education | milestone  (work = right side, others = left side)
 #   start/end:  free text, e.g. "2023" / "Present"
 #   title:      role or achievement
 #   org:        company, school, or issuer
@@ -20,12 +24,6 @@
 #                   - file: vcb-workshop.jpg
 #                     caption: Architecture workshop with the data engineering team
 # -----------------------------------------------------------------------------
-
-- type: milestone
-  start: "2026"
-  title: Microsoft Certified — Azure Solutions Architect Expert (AZ-305)
-  org: Microsoft
-  summary: Certified on designing identity, governance, data, and infrastructure solutions on Azure.
 
 - type: work
   start: "2023"
@@ -56,9 +54,15 @@
   photos: []
 
 - type: milestone
+  start: "2026"
+  title: Azure Solutions Architect Expert (AZ-305)
+  org: Microsoft Certified
+  summary: Certified on designing identity, governance, data, and infrastructure solutions on Azure.
+
+- type: milestone
   start: "2025"
-  title: Microsoft Certified — Azure Administrator Associate (AZ-104)
-  org: Microsoft
+  title: Azure Administrator Associate (AZ-104)
+  org: Microsoft Certified
   summary: Certified on managing Azure identities, governance, storage, compute, and virtual networking.
 
 - type: work
@@ -77,16 +81,6 @@
   tags: [C#, .NET, Clean Architecture]
   photos: []
 
-- type: education
-  start: "2019"
-  end: "2021"
-  title: Bachelor of Computer Science (Distinction)
-  org: Queensland University of Technology
-  url: https://www.qut.edu.au
-  location: Brisbane, Australia
-  summary: Graduated with Distinction and named on the Dean's List for excellent academic performance.
-  photos: []
-
 - type: work
   start: "2019"
   end: "2020"
@@ -101,4 +95,14 @@
     - label: Deployment tooling
       text: Built a Python SDK for automated notebook deployment, reducing manual effort and improving reproducibility.
   tags: [Azure Data Factory, Python, CI/CD]
+  photos: []
+
+- type: education
+  start: "2019"
+  end: "2021"
+  title: Bachelor of Computer Science (Distinction)
+  org: Queensland University of Technology
+  url: https://www.qut.edu.au
+  location: Brisbane, Australia
+  summary: Graduated with Distinction and named on the Dean's List for excellent academic performance.
   photos: []
