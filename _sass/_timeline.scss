@@ -216,6 +216,27 @@ $timeline-axis-mobile: 2.5rem;
   }
 }
 
+// small photo thumbnails on the home page; tap to enlarge
+.timeline-thumbs {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  figure {
+    margin: 0;
+  }
+
+  img.timeline-thumb {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 0.35rem;
+    border: 1px solid var(--global-divider-color);
+    cursor: zoom-in;
+  }
+}
+
 // compact variant used on the home page
 .timeline-compact {
   .timeline-row {
