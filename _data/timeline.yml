@@ -132,6 +132,21 @@
     - file: cert-qut-degree.jpg
       caption: Degree certificate
 
+- type: work
+  start: "2019"
+  title: Coding Instructor
+  org: Junior Engineers Tech Centre
+  location: Queensland, Australia
+  summary: >
+    Teaching kids to code, and a job I loved. Turning big ideas into small, hands-on steps that young learners could build on.
+  highlights:
+    - label: Weekly coding classes
+      text: Designed and delivered a weekly programming curriculum for groups of 15–20 students, using Scratch to build foundational coding concepts and computational thinking.
+    - label: Arduino workshops
+      text: Created and led hands-on Arduino workshops for 15 students, combining electronics and programming to build working motorised vehicles.
+  tags: [Teaching, Scratch, Arduino]
+  photos: []
+
 - type: milestone
   start: Feb 2019
   title: "IELTS Academic: 7.5 overall (CEFR C1)"
