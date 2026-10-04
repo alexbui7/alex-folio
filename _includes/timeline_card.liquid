@@ -46,6 +46,10 @@
       </ul>
     {% endif %}
 
+    {% if card.note %}
+      <p class="timeline-note">{{ card.note }}</p>
+    {% endif %}
+
     {% if card.photos and card.photos.size > 0 %}
       <div class="timeline-photos">
         {% for photo in card.photos %}

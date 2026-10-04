@@ -192,6 +192,13 @@ $timeline-axis-mobile: 2.5rem;
   border: 1px solid var(--global-theme-color);
 }
 
+.timeline-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
 .timeline-photos {
   margin-top: 1rem;
   display: grid;

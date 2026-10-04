@@ -18,6 +18,7 @@
 #   summary:    one or two sentences shown everywhere
 #   highlights: optional list of { label, text } shown on /work/ only
 #   verify_url: optional link where visitors can verify a certificate
+#   note:       optional short note shown above the photos on /work/
 #   tags:       optional list of technologies / topics shown as chips
 #   photos:     optional list of photos shown on /work/ only.
 #               Put the image files in assets/img/work/ and reference them as:
@@ -145,7 +146,12 @@
     - label: Arduino workshops
       text: Created and led hands-on Arduino workshops for 15 students, combining electronics and programming to build working motorised vehicles.
   tags: [Teaching, Scratch, Arduino]
-  photos: []
+  note: No photos of the students here, to protect their privacy. These are the robots we built.
+  photos:
+    - file: jetc-robot-build.jpg
+      caption: One of the Arduino robot cars, mid-build
+    - file: jetc-robot-track.jpg
+      caption: A finished robot following a taped track
 
 - type: milestone
   start: Feb 2019
