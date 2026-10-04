@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/alex-folio/";
     },
-  },{id: "nav-work",
-          title: "work",
-          description: "The work I&#39;ve done, the teams I&#39;ve done it with, and what I learned along the way.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/alex-folio/work/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "CV",
           description: "Experience, education, certifications, and skills.",
           section: "Navigation",
