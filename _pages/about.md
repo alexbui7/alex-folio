@@ -7,7 +7,7 @@ subtitle: Cloud & Infrastructure Automation Engineer · <a href='https://www.vie
 profile:
   align: right
   image: prof_pic_alex.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
