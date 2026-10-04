@@ -51,19 +51,33 @@
     - label: Working across teams
       text: Aligning Data Engineering, Infrastructure, Security, Architecture, and external vendors on requirements, solution architecture, BOMs, and implementation plans.
   tags: [AWS, Databricks, Terraform, Unity Catalog, Entra ID, GitLab CI/CD, FinOps]
-  photos: []
+  photos:
+    - file: vcb-thanks-party-team.jpg
+      caption: Thanks party with the wider team
+    - file: vcb-thanks-party.jpg
+      caption: With the team at the thanks party
+    - file: vcb-year-end-party.jpg
+      caption: Year-end party with colleagues
+    - file: vcb-year-end-toast.jpg
+      caption: A toast at the year-end party
 
 - type: milestone
-  start: "2026"
+  start: May 2026
   title: Azure Solutions Architect Expert (AZ-305)
   org: Microsoft Certified
   summary: Certified on designing identity, governance, data, and infrastructure solutions on Azure.
+  photos:
+    - file: cert-az305.jpg
+      caption: Certificate
 
 - type: milestone
-  start: "2025"
+  start: Aug 2025
   title: Azure Administrator Associate (AZ-104)
   org: Microsoft Certified
   summary: Certified on managing Azure identities, governance, storage, compute, and virtual networking.
+  photos:
+    - file: cert-az104.jpg
+      caption: Certificate
 
 - type: work
   start: "2021"
@@ -79,7 +93,9 @@
     - label: Feature delivery
       text: Built backend features in C#/.NET in close collaboration with product and UI teams.
   tags: [C#, .NET, Clean Architecture]
-  photos: []
+  photos:
+    - file: fathom-office.jpg
+      caption: Day to day at the Fathom office
 
 - type: work
   start: "2019"
@@ -100,9 +116,17 @@
 - type: education
   start: "2019"
   end: "2021"
-  title: Bachelor of Computer Science (Distinction)
+  title: Bachelor of Information Technology (Computer Science), with Distinction
   org: Queensland University of Technology
   url: https://www.qut.edu.au
   location: Brisbane, Australia
-  summary: Graduated with Distinction and named on the Dean's List for excellent academic performance.
-  photos: []
+  summary: Graduated with Distinction in August 2021 and named on the Dean's List for excellent academic performance.
+  photos:
+    - file: cert-qut-degree.jpg
+      caption: Degree certificate
+
+- type: milestone
+  start: Feb 2019
+  title: "IELTS Academic: 7.5 overall (CEFR C1)"
+  org: British Council · IDP · Cambridge Assessment English
+  summary: "Listening 8.5 · Reading 7.5 · Writing 6.5 · Speaking 7.0"

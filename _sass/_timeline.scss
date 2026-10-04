@@ -126,6 +126,12 @@ $timeline-axis-mobile: 2.5rem;
   .timeline-summary {
     font-size: 0.875rem;
   }
+
+  // certificates and documents: show the whole page, no cropping
+  .timeline-photos img {
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
 }
 
 .timeline-date {
