@@ -104,7 +104,7 @@
   start: "2019"
   end: "2020"
   title: Software Engineer Intern
-  org: Vingroup Advanced Analytics
+  org: Vingroup Advanced Analytics (Vantix)
   location: Hanoi, Vietnam
   summary: >
     First steps into data platform automation — making pipelines testable and deployments repeatable.
@@ -116,7 +116,7 @@
   tags: [Azure Data Factory, Python, CI/CD]
   photos:
     - file: vingroup-office-desk.jpg
-      caption: Heads-down at the Vingroup Advanced Analytics office
+      caption: Heads-down at the Vantix office
     - file: vingroup-office-team.jpg
       caption: A laugh with a teammate between deployments
 

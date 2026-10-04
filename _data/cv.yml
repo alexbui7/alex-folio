@@ -45,7 +45,7 @@ cv:
           - Refactored legacy monolithic systems into modular architectures using Clean Architecture, improving testability and maintainability.
           - Developed backend features in C#/.NET in close collaboration with product and UI teams.
 
-      - company: Vingroup Advanced Analytics
+      - company: Vingroup Advanced Analytics (Vantix)
         position: Software Engineer Intern
         location: Hanoi, Vietnam
         start_date: 2019
