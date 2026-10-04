@@ -4,7 +4,7 @@ My personal site: who I am, what I work on, and a timeline of how I got here.
 
 **Live site:** [alexbui7.github.io/alex-folio](https://alexbui7.github.io/alex-folio/)
 
-I'm Alex (Bui Minh Anh), a Cloud & Infrastructure Automation Engineer in Hanoi. I build automation-first data and ML platforms on AWS and Databricks.
+I'm Alex (Bui Minh Anh), a Software & Cloud Engineer in Hanoi. I build automation-first data and ML platforms on AWS and Databricks.
 
 ## Built with Claude 🙂
 
