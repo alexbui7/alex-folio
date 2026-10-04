@@ -6,7 +6,7 @@ subtitle: Cloud & Infrastructure Automation Engineer · <a href='https://www.vie
 
 profile:
   align: right
-  # image: prof_pic.jpg # TODO: add your own photo to assets/img/ and uncomment this line
+  image: prof_pic_alex.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"

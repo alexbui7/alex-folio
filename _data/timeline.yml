@@ -17,6 +17,7 @@
 #   location:   optional
 #   summary:    one or two sentences shown everywhere
 #   highlights: optional list of { label, text } shown on /work/ only
+#   verify_url: optional link where visitors can verify a certificate
 #   tags:       optional list of technologies / topics shown as chips
 #   photos:     optional list of photos shown on /work/ only.
 #               Put the image files in assets/img/work/ and reference them as:
@@ -65,6 +66,7 @@
   start: May 2026
   title: Azure Solutions Architect Expert (AZ-305)
   org: Microsoft Certified
+  verify_url: https://learn.microsoft.com/api/credentials/share/en-us/BuiMinhAnh-1841/56200BACE3A6C8AE?sharingId=F7F392EF83CD31CB
   summary: Certified on designing identity, governance, data, and infrastructure solutions on Azure.
   photos:
     - file: cert-az305.jpg
@@ -74,6 +76,7 @@
   start: Aug 2025
   title: Azure Administrator Associate (AZ-104)
   org: Microsoft Certified
+  verify_url: https://learn.microsoft.com/api/credentials/share/en-us/BuiMinhAnh-1841/9529A3B46A5342?sharingId=F7F392EF83CD31CB
   summary: Certified on managing Azure identities, governance, storage, compute, and virtual networking.
   photos:
     - file: cert-az104.jpg
@@ -111,7 +114,11 @@
     - label: Deployment tooling
       text: Built a Python SDK for automated notebook deployment, reducing manual effort and improving reproducibility.
   tags: [Azure Data Factory, Python, CI/CD]
-  photos: []
+  photos:
+    - file: vingroup-office-desk.jpg
+      caption: Heads-down at the Vingroup Advanced Analytics office
+    - file: vingroup-office-team.jpg
+      caption: A laugh with a teammate between deployments
 
 - type: education
   start: "2019"

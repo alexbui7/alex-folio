@@ -26,6 +26,12 @@
     <p class="timeline-summary">{{ card.summary }}</p>
   {% endif %}
 
+  {% if card.verify_url %}
+    <a class="timeline-verify" href="{{ card.verify_url }}" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verify credential
+    </a>
+  {% endif %}
+
   {% unless include.compact %}
     {% if card.highlights and card.highlights.size > 0 %}
       <ul class="timeline-highlights">
