@@ -68,15 +68,6 @@
     {% endif %}
   {% endunless %}
 
-  {% if include.compact and card.photos and card.photos.size > 0 %}
-    <div class="timeline-thumbs">
-      {% for photo in card.photos %}
-        {% assign photo_path = photo.file | prepend: 'assets/img/work/' %}
-        {% include figure.liquid path=photo_path class="timeline-thumb" alt=photo.caption title=photo.caption zoomable=true sizes="64px" %}
-      {% endfor %}
-    </div>
-  {% endif %}
-
   {% if card.tags and card.tags.size > 0 %}
     <div class="timeline-tags">
       {% for tag in card.tags %}
