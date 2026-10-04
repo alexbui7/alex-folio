@@ -1,0 +1,58 @@
+{% comment %}
+  Work timeline, driven by _data/timeline.yml.
+  Usage:
+    {% include timeline.liquid %}               full view (highlights, tags, photos)
+    {% include timeline.liquid compact=true %}  summary-only view for the home page
+
+  Jobs (type: work) sit on the right of the line. Education and certifications
+  sit on the left, next to the job listed just above them in the data file.
+{% endcomment %}
+
+{% assign entries = site.data.timeline %}
+{% assign seen_work = false %}
+
+<div class="timeline-legend" aria-hidden="true">
+  <span class="timeline-legend-side">learning &amp; certifications</span>
+  <span class="timeline-legend-main">work</span>
+</div>
+
+<ol class="timeline{% if include.compact %} timeline-compact{% endif %}">
+  {% for entry in entries %}
+    {% assign i = forloop.index0 %}
+
+    {% if entry.type == 'work' %}
+      {% assign seen_work = true %}
+      <li class="timeline-row">
+        <span class="timeline-marker" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+        <div class="timeline-main">
+          {% include timeline_card.liquid entry=entry compact=include.compact %}
+        </div>
+        <div class="timeline-side">
+          {% assign next = i | plus: 1 %}
+          {% for side in entries offset: next %}
+            {% if side.type == 'work' %}{% break %}{% endif %}
+            {% if side.type == 'education' %}
+              {% assign side_icon = 'fa-solid fa-graduation-cap' %}
+            {% else %}
+              {% assign side_icon = 'fa-solid fa-award' %}
+            {% endif %}
+            {% include timeline_card.liquid entry=side compact=include.compact icon=side_icon %}
+          {% endfor %}
+        </div>
+      </li>
+    {% elsif seen_work == false %}
+      {% comment %} Education/certs listed before any job get a row of their own. {% endcomment %}
+      {% if entry.type == 'education' %}
+        {% assign side_icon = 'fa-solid fa-graduation-cap' %}
+      {% else %}
+        {% assign side_icon = 'fa-solid fa-award' %}
+      {% endif %}
+      <li class="timeline-row timeline-row-side-only">
+        <span class="timeline-marker timeline-marker-side" aria-hidden="true"><i class="{{ side_icon }}"></i></span>
+        <div class="timeline-side">
+          {% include timeline_card.liquid entry=entry compact=include.compact icon=side_icon %}
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
