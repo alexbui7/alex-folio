@@ -93,6 +93,9 @@ cv:
       - name: Security & Governance
         icon: fa-solid fa-shield-halved
         keywords: "Entra ID, AWS IAM, SSO/SCIM, FinOps, observability"
+      - name: AI-Assisted Engineering
+        icon: fa-solid fa-wand-magic-sparkles
+        keywords: "Claude Code, Cursor, Codex"
 
     Languages:
       - name: Vietnamese
