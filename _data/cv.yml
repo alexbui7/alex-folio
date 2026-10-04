@@ -1,15 +1,8 @@
 cv:
   name: Bui Minh Anh (Alex Bui)
-  label: Cloud & Infrastructure Automation Engineer
+  headline: Cloud & Infrastructure Automation Engineer
   email: minhanh.alex.7@gmail.com
   location: Hanoi, Vietnam — open to relocation
-  image: ""
-  summary: >
-    Infrastructure engineer with 3+ years of software and platform experience, building automation-first cloud platforms
-    for regulated, large-scale environments. Designed the foundations of a multi-cloud enterprise data and ML platform
-    (AWS + Databricks) covering IaC, CI/CD, secure networking, and cost/performance benchmarking. Strong at turning
-    ambiguous requirements into measurable engineering criteria, and at aligning engineering teams, vendors, and
-    leadership on technical strategy.
 
   social_networks:
     - network: LinkedIn
@@ -17,14 +10,23 @@ cv:
     - network: GitHub
       username: alexbui7
 
+  # Field names follow RenderCV (https://docs.rendercv.com), which also builds a PDF from this file.
   sections:
+    Summary:
+      - >-
+        Infrastructure engineer with 3+ years of software and platform experience, building automation-first cloud
+        platforms for regulated, large-scale environments. Designed the foundations of a multi-cloud enterprise data
+        and ML platform (AWS + Databricks) covering IaC, CI/CD, secure networking, and cost/performance benchmarking.
+        Strong at turning ambiguous requirements into measurable engineering criteria, and at aligning engineering
+        teams, vendors, and leadership on technical strategy.
+
     Experience:
       - company: Vietcombank
         position: Software Engineer
         location: Hanoi, Vietnam
         url: https://www.vietcombank.com.vn
         start_date: 2023
-        end_date: Present
+        end_date: present
         summary: Building ODP, the bank's enterprise cloud data and ML platform on AWS and Databricks.
         highlights:
           - "AWS platform architecture: multi-account structure, networking, security, and platform governance."
@@ -68,12 +70,12 @@ cv:
 
     Certificates:
       - name: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"
-        date: 2026-05-08
+        date: "2026-05-08"
         issuer: Microsoft
         icon: fa-solid fa-award
 
       - name: "Microsoft Certified: Azure Administrator Associate (AZ-104)"
-        date: 2025-08-15
+        date: "2025-08-15"
         issuer: Microsoft
         icon: fa-solid fa-award
 
