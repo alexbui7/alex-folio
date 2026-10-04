@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cloud & Infrastructure Automation Engineer · <a href='https://www.vietcombank.com.vn' target='_blank'>Vietcombank</a> · Hanoi, Vietnam · Open to relocation
+subtitle: Software & Cloud Engineer · <a href='https://www.vietcombank.com.vn' target='_blank'>Vietcombank</a> · Hanoi, Vietnam · Open to relocation
 
 profile:
   align: right
