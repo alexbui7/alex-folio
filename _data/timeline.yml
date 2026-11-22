@@ -108,6 +108,18 @@
     - file: fathom-office.jpg
       caption: Day to day at the Fathom office
 
+- type: education
+  start: "2019"
+  end: "2021"
+  title: Bachelor of Information Technology (Computer Science), with Distinction
+  org: Queensland University of Technology
+  url: https://www.qut.edu.au
+  location: Brisbane, Australia
+  summary: Graduated with Distinction in August 2021 and named on the Dean's List for excellent academic performance.
+  photos:
+    - file: cert-qut-degree.jpg
+      caption: Degree certificate
+
 - type: work
   start: "2019"
   end: "2020"
@@ -127,18 +139,6 @@
       caption: Heads-down at the Vantix office
     - file: vingroup-office-team.jpg
       caption: A laugh with a teammate between deployments
-
-- type: education
-  start: "2019"
-  end: "2021"
-  title: Bachelor of Information Technology (Computer Science), with Distinction
-  org: Queensland University of Technology
-  url: https://www.qut.edu.au
-  location: Brisbane, Australia
-  summary: Graduated with Distinction in August 2021 and named on the Dean's List for excellent academic performance.
-  photos:
-    - file: cert-qut-degree.jpg
-      caption: Degree certificate
 
 - type: work
   start: "2019"
