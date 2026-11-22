@@ -70,7 +70,7 @@ cv:
 
     Certificates:
       - name: "AWS Certified CloudOps Engineer – Associate"
-        date: "2026-11"
+        date: "2026-11-13"
         issuer: Amazon Web Services
         url: https://www.credly.com/badges/7094f742-5b9d-4069-9d04-e737c15452d3
         icon: fa-solid fa-award
