@@ -64,6 +64,13 @@
       caption: A toast at the year-end party
 
 - type: milestone
+  start: Nov 2026
+  title: AWS Certified CloudOps Engineer – Associate
+  org: Amazon Web Services
+  verify_url: https://www.credly.com/badges/7094f742-5b9d-4069-9d04-e737c15452d3
+  summary: Certified on deploying, operating, monitoring, scaling, and securing workloads on AWS, with a focus on performance and cost.
+
+- type: milestone
   start: May 2026
   title: Azure Solutions Architect Expert (AZ-305)
   org: Microsoft Certified
