@@ -69,6 +69,12 @@ cv:
           - "Dean's List: Excellent Academic Performance"
 
     Certificates:
+      - name: "AWS Certified CloudOps Engineer – Associate"
+        date: "2026-11"
+        issuer: Amazon Web Services
+        url: https://www.credly.com/badges/7094f742-5b9d-4069-9d04-e737c15452d3
+        icon: fa-solid fa-award
+
       - name: "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"
         date: "2026-05-08"
         issuer: Microsoft
